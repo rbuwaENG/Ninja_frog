@@ -1,0 +1,432 @@
+[gd_scene load_steps=71 format=2]
+
+[ext_resource path="res://Art/Free/Main Characters/Ninja Frog/Idle (32x32).png" type="Texture" id=1]
+[ext_resource path="res://Art/Free/Main Characters/Ninja Frog/Run (32x32).png" type="Texture" id=2]
+[ext_resource path="res://Art/Free/Main Characters/Ninja Frog/Jump (32x32).png" type="Texture" id=3]
+[ext_resource path="res://Art/Free/Main Characters/Ninja Frog/Hit (32x32).png" type="Texture" id=4]
+[ext_resource path="res://Art/Free/Main Characters/Ninja Frog/Fall (32x32).png" type="Texture" id=5]
+[ext_resource path="res://Art/Free/Main Characters/Ninja Frog/Double Jump (32x32).png" type="Texture" id=6]
+[ext_resource path="res://Art/Free/Main Characters/Ninja Frog/Wall Jump (32x32).png" type="Texture" id=7]
+[ext_resource path="res://character/player.gd" type="Script" id=8]
+[ext_resource path="res://character/Label.gd" type="Script" id=9]
+
+[sub_resource type="AtlasTexture" id=1]
+atlas = ExtResource( 2 )
+region = Rect2( 0, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=2]
+atlas = ExtResource( 2 )
+region = Rect2( 32, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=3]
+atlas = ExtResource( 2 )
+region = Rect2( 64, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=4]
+atlas = ExtResource( 2 )
+region = Rect2( 96, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=5]
+atlas = ExtResource( 2 )
+region = Rect2( 128, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=6]
+atlas = ExtResource( 2 )
+region = Rect2( 160, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=7]
+atlas = ExtResource( 2 )
+region = Rect2( 192, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=8]
+atlas = ExtResource( 2 )
+region = Rect2( 224, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=9]
+atlas = ExtResource( 2 )
+region = Rect2( 256, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=10]
+atlas = ExtResource( 2 )
+region = Rect2( 288, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=11]
+atlas = ExtResource( 2 )
+region = Rect2( 320, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=12]
+atlas = ExtResource( 2 )
+region = Rect2( 352, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=39]
+atlas = ExtResource( 7 )
+region = Rect2( 0, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=40]
+atlas = ExtResource( 7 )
+region = Rect2( 32, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=41]
+atlas = ExtResource( 7 )
+region = Rect2( 64, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=42]
+atlas = ExtResource( 7 )
+region = Rect2( 96, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=43]
+atlas = ExtResource( 7 )
+region = Rect2( 128, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=31]
+atlas = ExtResource( 3 )
+region = Rect2( 0, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=13]
+atlas = ExtResource( 1 )
+region = Rect2( 0, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=14]
+atlas = ExtResource( 1 )
+region = Rect2( 32, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=15]
+atlas = ExtResource( 1 )
+region = Rect2( 64, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=16]
+atlas = ExtResource( 1 )
+region = Rect2( 96, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=17]
+atlas = ExtResource( 1 )
+region = Rect2( 128, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=18]
+atlas = ExtResource( 1 )
+region = Rect2( 160, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=19]
+atlas = ExtResource( 1 )
+region = Rect2( 192, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=20]
+atlas = ExtResource( 1 )
+region = Rect2( 224, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=21]
+atlas = ExtResource( 1 )
+region = Rect2( 256, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=22]
+atlas = ExtResource( 1 )
+region = Rect2( 288, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=23]
+atlas = ExtResource( 1 )
+region = Rect2( 320, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=32]
+atlas = ExtResource( 4 )
+region = Rect2( 0, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=33]
+atlas = ExtResource( 4 )
+region = Rect2( 32, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=34]
+atlas = ExtResource( 4 )
+region = Rect2( 64, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=35]
+atlas = ExtResource( 4 )
+region = Rect2( 96, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=36]
+atlas = ExtResource( 4 )
+region = Rect2( 128, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=37]
+atlas = ExtResource( 4 )
+region = Rect2( 160, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=38]
+atlas = ExtResource( 4 )
+region = Rect2( 192, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=24]
+atlas = ExtResource( 5 )
+region = Rect2( 0, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=25]
+atlas = ExtResource( 6 )
+region = Rect2( 0, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=26]
+atlas = ExtResource( 6 )
+region = Rect2( 32, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=27]
+atlas = ExtResource( 6 )
+region = Rect2( 64, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=28]
+atlas = ExtResource( 6 )
+region = Rect2( 96, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=29]
+atlas = ExtResource( 6 )
+region = Rect2( 128, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=30]
+atlas = ExtResource( 6 )
+region = Rect2( 160, 0, 32, 32 )
+
+[sub_resource type="SpriteFrames" id=44]
+animations = [ {
+"frames": [ SubResource( 1 ), SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 12 ) ],
+"loop": true,
+"name": "run",
+"speed": 20.0
+}, {
+"frames": [ SubResource( 39 ), SubResource( 40 ), SubResource( 41 ), SubResource( 42 ), SubResource( 43 ) ],
+"loop": true,
+"name": "wall_jump",
+"speed": 20.0
+}, {
+"frames": [ SubResource( 31 ) ],
+"loop": true,
+"name": "jump",
+"speed": 20.0
+}, {
+"frames": [ SubResource( 13 ), SubResource( 14 ), SubResource( 15 ), SubResource( 16 ), SubResource( 17 ), SubResource( 18 ), SubResource( 19 ), SubResource( 20 ), SubResource( 21 ), SubResource( 22 ), SubResource( 23 ) ],
+"loop": true,
+"name": "idel",
+"speed": 20.0
+}, {
+"frames": [ SubResource( 32 ), SubResource( 33 ), SubResource( 34 ), SubResource( 35 ), SubResource( 36 ), SubResource( 37 ), SubResource( 38 ) ],
+"loop": true,
+"name": "hit",
+"speed": 20.0
+}, {
+"frames": [ SubResource( 24 ) ],
+"loop": true,
+"name": "fall",
+"speed": 20.0
+}, {
+"frames": [ SubResource( 25 ), SubResource( 26 ), SubResource( 27 ), SubResource( 28 ), SubResource( 29 ), SubResource( 30 ) ],
+"loop": true,
+"name": "doble_jump",
+"speed": 20.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=45]
+radius = 7.0
+height = 10.0
+
+[sub_resource type="Animation" id=59]
+resource_name = "doble_jump"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ "doble_jump" ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("AnimationTree:parameters/double_jump/active")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.3 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+
+[sub_resource type="Animation" id=55]
+resource_name = "fall"
+length = 0.05
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ "fall" ]
+}
+
+[sub_resource type="Animation" id=49]
+resource_name = "hit"
+length = 0.05
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ "hit" ]
+}
+
+[sub_resource type="Animation" id=46]
+resource_name = "idle"
+length = 0.05
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ "idel" ]
+}
+
+[sub_resource type="Animation" id=47]
+resource_name = "jump"
+length = 0.05
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ "jump" ]
+}
+
+[sub_resource type="Animation" id=48]
+resource_name = "run"
+length = 0.05
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ "run" ]
+}
+
+[sub_resource type="AnimationNodeAnimation" id=56]
+animation = "fall"
+
+[sub_resource type="AnimationNodeAnimation" id=60]
+animation = "doble_jump"
+
+[sub_resource type="AnimationNodeAnimation" id=57]
+animation = "jump"
+
+[sub_resource type="AnimationNodeOneShot" id=61]
+fadein_time = 0.0
+fadeout_time = 0.0
+
+[sub_resource type="AnimationNodeAnimation" id=50]
+animation = "idle"
+
+[sub_resource type="AnimationNodeAnimation" id=51]
+animation = "run"
+
+[sub_resource type="AnimationNodeAnimation" id=52]
+animation = "run"
+
+[sub_resource type="AnimationNodeBlendSpace1D" id=53]
+blend_point_0/node = SubResource( 50 )
+blend_point_0/pos = 0.0
+blend_point_1/node = SubResource( 51 )
+blend_point_1/pos = 1.0
+blend_point_2/node = SubResource( 52 )
+blend_point_2/pos = -1.0
+
+[sub_resource type="AnimationNodeBlend3" id=58]
+
+[sub_resource type="AnimationNodeBlendTree" id=54]
+graph_offset = Vector2( 0, 7.66634 )
+nodes/Animation/node = SubResource( 57 )
+nodes/Animation/position = Vector2( 240, 26.6667 )
+"nodes/Animation 2/node" = SubResource( 56 )
+"nodes/Animation 2/position" = Vector2( 293.333, 213.333 )
+"nodes/Animation 3/node" = SubResource( 60 )
+"nodes/Animation 3/position" = Vector2( 480, 320 )
+nodes/double_jump/node = SubResource( 61 )
+nodes/double_jump/position = Vector2( 720, 106.667 )
+nodes/output/position = Vector2( 933.333, 80 )
+nodes/x_sign/node = SubResource( 53 )
+nodes/x_sign/position = Vector2( 80, 133.333 )
+nodes/y_sign/node = SubResource( 58 )
+nodes/y_sign/position = Vector2( 506.667, 26.6667 )
+node_connections = [ "output", 0, "double_jump", "y_sign", 0, "Animation", "y_sign", 1, "x_sign", "y_sign", 2, "Animation 2", "double_jump", 0, "y_sign", "double_jump", 1, "Animation 3" ]
+
+[node name="player" type="KinematicBody2D"]
+collision_layer = 8
+script = ExtResource( 8 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 44 )
+animation = "idel"
+frame = 4
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, 4 )
+shape = SubResource( 45 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/doble_jump = SubResource( 59 )
+anims/fall = SubResource( 55 )
+anims/hit = SubResource( 49 )
+anims/idle = SubResource( 46 )
+anims/jump = SubResource( 47 )
+anims/run = SubResource( 48 )
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
+tree_root = SubResource( 54 )
+anim_player = NodePath("../AnimationPlayer")
+active = true
+parameters/double_jump/active = false
+parameters/x_sign/blend_position = 0
+parameters/y_sign/blend_amount = 0.0
+
+[node name="Label" type="Label" parent="."]
+margin_left = -20.0
+margin_top = -26.0
+margin_right = 20.0
+margin_bottom = -12.0
+text = "None"
+align = 1
+valign = 1
+script = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="changed_state" from="." to="Label" method="_on_player_changed_state"]
